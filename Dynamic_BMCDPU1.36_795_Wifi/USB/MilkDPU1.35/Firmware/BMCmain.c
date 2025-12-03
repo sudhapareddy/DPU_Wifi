@@ -11,6 +11,7 @@
 
 #define   WIFI
 
+# define SMARTCHIP
 #define BLOCK_1_COUNT 500
 #define BLOCK_2_COUNT 1250
 #define BLOCK_4_COUNT 1350
