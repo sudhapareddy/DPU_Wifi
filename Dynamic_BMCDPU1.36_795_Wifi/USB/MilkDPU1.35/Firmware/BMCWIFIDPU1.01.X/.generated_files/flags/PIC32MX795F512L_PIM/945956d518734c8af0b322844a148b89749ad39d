@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I".." -I"../../../../Microchip/Include"   -DXPRJ_PIC32MX795F512L_PIM=$(CND_CONF)    $(COMPARISON_BUILD)    F:\SmartekMilkDPU\Dynamic_BMCDPU1.36_795_Wifi\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c
