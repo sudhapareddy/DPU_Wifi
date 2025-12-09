@@ -9,7 +9,11 @@ void GPRS_Menu_Header(UINT8 hflag)
         STRCPY(LBUF,"*IP ADDR/DOMAIN*");
 
     if(hflag=='G')
-        STRCPY(LBUF," *GPRS SETTINGS*");
+    #ifdef WIFI
+            STRCPY(LBUF," *WIFI SETTINGS*");
+#elif defined(GPRS)
+            STRCPY(LBUF," *GPRS SETTINGS*");
+#endif  
 
     if(hflag=='I')
         STRCPY(LBUF,"  *IP ADDRESS*");

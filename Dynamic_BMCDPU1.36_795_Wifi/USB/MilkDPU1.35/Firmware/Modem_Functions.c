@@ -34,7 +34,7 @@ UINT8 Connect_GPRS(void)
     if(gstatus==0xFF)
         return;
     
-    STRCPY(LBUF,"SCTServer Connecting");
+    STRCPY(LBUF,"SUNServer Connecting");
     Disp_Msg(LINE5);
     
     if(SIM_INSERTED==1 && Modem_Init_Flag==1 )

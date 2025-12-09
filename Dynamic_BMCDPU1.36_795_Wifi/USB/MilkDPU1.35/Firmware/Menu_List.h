@@ -503,7 +503,8 @@ const UINT8 SETTINGS_SUBMENU_LIST[][20]={
                                     "  *ADMIN SETTINGS*  ",
 #ifdef WIFI
                                     "   *WI-FI SETTINGS* ",
-#elif defined(GPRS)
+                                    #endif      
+#ifdef GPRS
                                     "   *GPRS SETTINGS*  ",
 #endif                                    
                                     "  *DEALER SETTINGS* ",

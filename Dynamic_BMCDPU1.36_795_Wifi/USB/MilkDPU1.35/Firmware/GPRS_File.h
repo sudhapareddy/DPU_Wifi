@@ -130,7 +130,12 @@ void GPRS_On_Off(void)
 {
     GPRS_Menu_Header('G');
 
-    STRCPY(LBUF,"ACTIVATE GPRS?");
+      #ifdef WIFI
+            STRCPY(LBUF,"ACTIVATE WIFI?");
+#elif defined(GPRS)
+            STRCPY(LBUF,"ACTIVATE GPRS?");
+#endif  
+    
     
     EEPROM_ADDR=GPRS_ON_Loc;
 

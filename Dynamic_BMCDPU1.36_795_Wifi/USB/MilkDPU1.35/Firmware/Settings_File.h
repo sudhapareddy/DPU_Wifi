@@ -1403,8 +1403,12 @@ void Change_Password(void)
 void Device_On_Line(void)
 {
     Master_Menu_Header('G');
-
-    STRCPY(LBUF,"GPRS?");
+#ifdef WIFI
+                                        STRCPY(LBUF,"WIFI?");
+#elif defined(GPRS)
+                                        STRCPY(LBUF,"GPRS?");
+#endif
+    
 
     EEPROM_ADDR=On_Offline_Loc;
     Yes_No();

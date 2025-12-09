@@ -1,9 +1,3 @@
-
-
-
-
-
-
 //Boot Loader Code
  # define _SUPPRESS_PLIB_WARNING
 
@@ -11,7 +5,8 @@
 
 #define   WIFI
 
-# define SMARTCHIP
+//# define SMARTCHIP
+
 #define BLOCK_1_COUNT 500
 #define BLOCK_2_COUNT 1250
 #define BLOCK_4_COUNT 1350
@@ -7918,7 +7913,7 @@ void Mfg_Details(UINT8 mtype)
     Disp_Header_Boarder();
     Display_Field("DEVICE ID |", MACHINE_ID, LINE3);
 #ifdef WIFI
-    Display_Field("VERSION   |", "Wifi1.0", LINE4);
+    Display_Field("VERSION   |", "Wif1.01", LINE4);
 #elif defined(GPRS)
     Display_Field("VERSION   |", "GPRS1.0", LINE4);
 #else
